@@ -3,11 +3,11 @@ TARGET=main_robot
 SOURCES=../include/import_registers.c \
         ../include/enable_pwm_clock.c \
         ../include/wait_period.c \
-	../include/keypress.c \
-	../include/video_interface.c \
-	../include/wait_key.c \
-	../include/scale_image_data.c \
-	../include/draw_bitmap_multiwindow.c \
+		../include/keypress.c \
+		../include/video_interface.c \
+		../include/wait_key.c \
+		../include/scale_image_data.c \
+		../include/draw_bitmap_multiwindow.c \
         main_robot.c
 
 OBJECTS=$(patsubst %.cpp,%.o,$(patsubst %.c,%.o,$(notdir $(SOURCES))))
